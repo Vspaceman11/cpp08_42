@@ -1,6 +1,6 @@
 #pragma once
 #include <algorithm>
-#include <exception>
+#include <stdexcept>
 #include <string>
 
 template <typename T>
