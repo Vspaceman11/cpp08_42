@@ -2,7 +2,7 @@
 #include <stack>
 #include <iterator>
 
-template <typename t>
+template <typename T>
 class MutantStack : public std::stack<T>
 {
 	public:
@@ -22,8 +22,8 @@ class MutantStack : public std::stack<T>
 		const_iterator begin() const noexcept;
 		const_iterator end() const noexcept;
 
-		reverse_iterator rbegin() const noexcept;
-		reverse_iterator rend() const noexcept;
+		reverse_iterator rbegin() noexcept;
+		reverse_iterator rend() noexcept;
 
 		const_reverse_iterator rbegin() const noexcept;
 		const_reverse_iterator rend() const noexcept;
