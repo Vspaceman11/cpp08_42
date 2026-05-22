@@ -44,7 +44,7 @@ int Span::shortestSpan() const
 {
 	if (_storage.size() < 2)
 	{
-		throw std::runtime_error("Error: Not enogh elemets to finad a span!");
+		throw std::runtime_error("Error: Not enough elements to find a span!");
 	}
 
 	auto copy = _storage;
@@ -53,7 +53,7 @@ int Span::shortestSpan() const
 	int min_span = copy[1] - copy[0];
 	for (size_t i = 1; i < copy.size() - 1; ++i)
 	{
-		auto current_span = copy[i + 1] - copy[i];
+		int current_span = copy[i + 1] - copy[i];
 		if (current_span < min_span)
 		{
 			min_span = current_span;
