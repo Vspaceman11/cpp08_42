@@ -37,7 +37,7 @@ int main() {
 		auto it = easyfind(myList, 14);
 		std::cout << "Found in list: " << *it << std::endl;
 	}
-	catch (const std::exception& e)
+	catch (const std::runtime_error& e)
 	{
 		std::cerr << e.what() << std::endl;
 	}
